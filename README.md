@@ -95,7 +95,25 @@
 ## 画面遷移図
 
 ![画面遷移図](app/assets/images/readme/screen_flow.png)
+【未ログイン時】
+　└ トップページ
+　　　├─> ログインページ
+　　　├─> 新規登録ページ
 
+【ログイン後】
+　└ ホーム画面
+　　　├─> 子ども一覧
+　　　│　　├─> 子ども詳細（タイムライン表示）
+　　　│　　│　　├─> 成長記録作成ページ
+　　　│　　│　　└─> 成長記録詳細ページ（編集・削除）
+　　　│　　
+　　　├─> 月齢チェックリスト
+　　　│　　└─> チェック保存
+　　　│
+　　　├─> 家族招待ページ
+　　　│　　└─> 招待状況の確認
+　　　│
+　　　└─> マイページ（プロフィール・ログアウト）
 ---
 
 ## 開発環境
@@ -115,8 +133,8 @@
 
 以下の手順でローカル環境にセットアップできます。
 
-git clone https://github.com/your-username/kodomo-memory.git
-cd kodomo-memory
+git clone https://github.com/takuya20221023/child-growth-app.git
+cd child-growth-app
 bundle install
 rails db:create
 rails db:migrate
