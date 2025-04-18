@@ -17,7 +17,7 @@
 
 - メールアドレス：`test@example.com`  
 - パスワード：`password123`  
-- Basic認証：未設定（必要に応じて記載）
+- Basic認証：admin 2222
 
 ---
 
